@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/vite-react-typescript/sw.js', { scope: '/vite-react-typescript/' })})}
