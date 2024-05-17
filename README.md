@@ -13,6 +13,7 @@ This project is a technical assessment for a frontend developer position. The pr
 - Dark and light mode
 - Persist theme mode in local storage
 - Persist tasks in local storage
+- PWA support
 
 ## Installation
 
