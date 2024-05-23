@@ -54,7 +54,7 @@ function Todo({
   }, [isEditing]);
 
   return (
-    <li className="py-4">
+    <li className="py-4" key={todo.id}>
       {isEditing ? (
         <form onSubmit={handleUpdate}>
           <div className="flex justify-between items-center">
@@ -92,7 +92,7 @@ function Todo({
               className="before:content[''] peer relative h-4 w-4 cursor-pointer appearance-none rounded-xl border border-slate-950 border- transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-teal-500 checked:bg-teal-500 checked:before:bg-teal-500 hover:before:opacity-10 dark:border-gray-50"
             />
 
-            <label className="ml-3 block text-gray-900 sm:w-[300px] w-[250px] break-words">
+            <label className="ml-3 block text-gray-900  w-[150px] xs:w-[180px] sm:w-[250px] lg:w-[300px] xl:w-[320px] break-words">
               {todo.completed ? (
                 <span className="line-through text-gray-400">{todo.task}</span>
               ) : (
